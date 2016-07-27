@@ -1,0 +1,1 @@
+print "hellow world"print "George is gay"
