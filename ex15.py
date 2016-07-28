@@ -1,4 +1,4 @@
-# A system specific parameter to require command line arguments.
+# A system(package) specific parameter to require command line arguments.
 from sys import argv
 
 #Arguments created for module argv. This line has two, arg to display the 
