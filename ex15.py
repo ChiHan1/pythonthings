@@ -15,6 +15,7 @@ print "Here's your file %r:" % filename
 #The object can be changed with different parameters. The parameter ".read()" sends the
 #object with no parameters. 
 print txt.read()
+txt.close()
 
 
 #This block of code is very similar to the first half. 
@@ -24,6 +25,6 @@ file_again = raw_input("> ")
 
 txt_again = open(file_again)
 print txt_again.read()
-
+txt_again.close()
 
 #woot
