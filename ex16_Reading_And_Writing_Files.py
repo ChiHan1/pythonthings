@@ -7,16 +7,20 @@ print "What file would you like to change or create?"
 filename = raw_input("> ")
 
 
-print "We're going to erase %r." % filename
+print "We're going to erase the contents of %r." % filename
 print "If you don't want that, hit CTRL-C (^C)."
-print "If you do want that, hit RETURN."
+print "To continue, press RETURN."
 
 raw_input("?")
 
 print "Opening the file..."
+
+#Opens the file with a write parameter and stores it in the target variable. 
 target = open(filename, 'w')
 
 print "Truncating the file. Goodbye!"
+
+#Sets all data in the file to 0. 
 target.truncate()
 
 print "Now I'm going to ask you for three lines to write to the file."
@@ -34,12 +38,19 @@ target.write(line2)
 target.write("\n")
 target.write(line3)
 target.write("\n")
+target.close()
 
-#target.close()
+print "Lets read the file."
 
+#Stores data in filename into readfile... not sure why I need this ....
+readfile = filename
 
-#outputfile = open(target)
-#print outputfile.read()
+#Opens the file associated with the variable readfile and stores it in lol.
+lol = open(readfile)
+
+#Prints the lol variable with the read parameter.
+print lol.read()
+
 
 
 print "And finally, we close it"
