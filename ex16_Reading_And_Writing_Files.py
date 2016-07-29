@@ -14,7 +14,7 @@ raw_input("?")
 ######Write to the file######
 print "Opening the file..."
 #Opens the file with a write parameter and stores it in the target variable. 
-target = open(filename, 'w')
+target = open(filename, 'w') ###The 'w' mode automatically truncates the file. 
 print "Truncating the file. Goodbye!"
 #Sets all data in the file to 0. 
 target.truncate()
