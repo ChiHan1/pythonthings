@@ -17,7 +17,10 @@ computer = raw_input(prompt)
 print "Does the object representation to the left excite you?"
 homosexualdetector = raw_input(prompt)
 
-print """
+
+
+#a format variable to have it be a string. This removed the quotes. Then I did an escape sequence to add the quotes back in. redundant. 
+print """ 
 Alright, so you said %r about liking me.
 You live in %r. Not sure where that is.
 And you have a shitty %r computer. Nice.
