@@ -8,9 +8,6 @@ script, from_file, to_file = argv
 in_file = open(from_file)
 indata = in_file.read()
 
-
-
-
 print "Ready, hit RETURN to continue, CTRL-C to fuck this program up."
 raw_input()
 
