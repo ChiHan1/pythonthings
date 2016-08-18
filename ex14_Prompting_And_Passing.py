@@ -1,0 +1,29 @@
+from sys import argv
+
+script, user_name, password = argv
+prompt = "8===D-- "
+
+print "Hi %s, I'm the %s script." % (user_name, script)
+print "I'd like to ask you a few questions."
+print "Do you like me %s?" % user_name
+likes = raw_input(prompt)
+
+print "Where do you live %s?" % user_name
+lives = raw_input(prompt)
+
+print "What kind of computer do you have?"
+computer = raw_input(prompt)
+
+print "Does the object representation to the left excite you?"
+homosexualdetector = raw_input(prompt)
+
+
+
+#a format variable to have it be a string. This removed the quotes. Then I did an escape sequence to add the quotes back in. redundant. 
+print """ 
+Alright, so you said %r about liking me.
+You live in %r. Not sure where that is.
+And you have a shitty %r computer. Nice.
+You said \"%s\" to object representation question. 
+If yes, you might be gay. If no, then you still might be gay.
+""" % (likes, lives, computer, homosexualdetector)
